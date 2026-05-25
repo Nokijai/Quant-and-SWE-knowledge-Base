@@ -46,6 +46,7 @@ jupyter notebook Quant/Projects/01_qqq_voo_pairs_analysis.ipynb
 
 ## Featured Notes
 
+- [Time series fundamentals](./Quant/Theory/01_time_series_fundamentals.md)
 - [QQQ vs VOO pairs analysis summary](./Quant/Projects/01_qqq_voo_pairs_analysis.md)
 
 ---
