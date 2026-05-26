@@ -95,7 +95,7 @@ $$
 \Delta p_t = \ln P_t - \ln P_{t-1} \approx \text{log return}
 $$
 
-Two series $X_t$ and $Y_t$ that are both I(1) may still share a **long-run link**—that is **cointegration** (see a future note `02_cointegration_theory.md`).
+Two series $X_t$ and $Y_t$ that are both I(1) may still share a **long-run link**—that is **cointegration** (see [02 — Cointegration Theory](./02_cointegration_theory.md)).
 
 ### Intuition
 
@@ -220,7 +220,7 @@ tsaplots.plot_pacf(series.dropna(), lags=30)
 |------|----------------|-------------------------|
 | **Correlation** | Short-run co-movement | High corr (QQQ & VOO > 0.95) does **not** guarantee tradable mean reversion |
 | **Stationarity (ADF)** | Whether a *single* series has a stable mean | Spread/ratio must be I(0) for classic z-score rules |
-| **Cointegration** | Long-run equilibrium between two I(1) series | Engle–Granger on Adj Close; our p ≈ 0.21 → **no cointegration** |
+| **Cointegration** | Long-run equilibrium between two I(1) series | Engle–Granger on Adj Close; our p ≈ 0.21 → **no cointegration** ([theory](./02_cointegration_theory.md)) |
 
 ### Intuition
 
