@@ -11,6 +11,7 @@ A learning and research log at the intersection of **Quantitative Finance** and 
 
 - `/Quant` — Strategy backtests, data analysis notebooks, and quantitative theory notes.
 - `/SWE` — System design notes, algorithms practice, and software engineering patterns.
+- `/DailyReading` — Daily reading tasks and learning activities.
 - `/Resources` — Papers, books, and curated references.
 
 ## Current Research
@@ -46,17 +47,31 @@ A learning and research log at the intersection of **Quantitative Finance** and 
 - Cointegration p-value: `0.013154` (passes 5% threshold).
 - Built workflow for hedge ratio estimation, spread construction, and 30-day z-score monitoring.
 
+## Daily Reading Tasks
+
+I've added a system for daily reading tasks to maintain consistent learning in both domains. These tasks are organized by year in the `/DailyReading` directory.
+
+To generate a new daily reading task:
+```bash
+python scripts/generate_daily_reading.py [date]
+```
+
+Or use the bash script:
+```bash
+bash scripts/create_daily_reading.sh [date]
+```
+
 ## Tech Stack
 
 - **Language:** Python (NumPy, Pandas, Statsmodels)
-- **Tools:** Git, Jupyter Notebook, Matplotlib
+- **Tools:** Git, Jupyter Notebook, Matplotlib, Automated daily task generation
 - **Topics:** Time series analysis, stationarity (ADF), cointegration, ACF/PACF
 
 ## Setup
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+source .venv/bin/activate   # Windows: .venv\\Scripts\\activate
 pip install -r requirements.txt
 jupyter notebook Quant/Projects/01_qqq_voo_pairs_analysis.ipynb
 # or open the sector scanner notebook
@@ -69,6 +84,13 @@ jupyter notebook Quant/Projects/02_pairs_trading_scanner.ipynb
 - [Cointegration theory](./Quant/Theory/02_cointegration_theory.md)
 - [QQQ vs VOO pairs analysis summary](./Quant/Projects/01_qqq_voo_pairs_analysis.md)
 - [Sector ETF pairs scanner summary](./Quant/Projects/02_pairs_trading_scanner.md)
+
+---
+
+## Daily Reading Archive
+
+- [Today's task](./DailyReading/2026/daily_2026-06-13.md) (generated automatically)
+- [Browse all daily tasks](./DailyReading/)
 
 ---
 
